@@ -1,9 +1,134 @@
-body{
-    background: orangered;
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
 
-  }
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
-  h1{
-    font-size: 10000;
-  }
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#userNameArea{
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  height: 100px;
+  width: 500px;
+  background-color: #000000;
+}
+
+
+p{
+  color:black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color:black;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#profilePicArea{
+  height: 250px;
+  width: 500px;
+}
+
+.profilePic{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+#profileContainer{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  background:rgb(255, 255, 255);
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#prof {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+.profileBar {
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  color:black;
+
+}
+
+#prof:hover:not(.active) {
+  background-color: rgb(190, 190, 190);
+}
+
+.neon {
+	color: #D0F8FF;
+	text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+		     0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+		     0 0 40px #A5F1FF;
+}
+
+form{
+  width: 100%;
+}
