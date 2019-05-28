@@ -24,7 +24,7 @@ countries = ["Chinese", "Japanese", "turn_up","Mexican", "French", "Russian", "K
 def home():
     form = SearchForm()
     if form.validate_on_submit():
-      flash(f'Genre is {form.genre.data}!', 'success')
+    #  flash(f'Genre is {form.genre.data}!', 'success')
 
       youtube = build('youtube', 'v3', developerKey=api_key)
 
