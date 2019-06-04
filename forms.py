@@ -3,22 +3,28 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
 
 class SearchForm(FlaskForm):
+    '''
+    Form for user to input music genre and search for videos
+    '''
     genre = StringField('Genre', validators=[DataRequired()])
     submit = SubmitField('GET LIT')
 
 
 class RegistrationForm(FlaskForm):
-    username = StringField('Username',
-                           validators=[DataRequired()])
-    email = StringField('Email',
-                        validators=[DataRequired()])
+    '''
+    Form for user to register with my application
+    '''
+    username = StringField('Username', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Sign Up')
 
 
 class LoginForm(FlaskForm):
-    email = StringField('Email',
-                        validators=[DataRequired()])
+    '''
+    Form for user to login to my application
+    '''
+    email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')

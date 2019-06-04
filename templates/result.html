@@ -1,26 +1,28 @@
 <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename = 'result.css') }}"/>
 <body>
 
-<div class="music">
-    <h1>Song Title: {{name}}</h1>
-    <h1>Country: {{country}}</h1>
-    <h1>Youtube Link: https://www.youtube.com/embed/{{song_genre}}</h1>
+    <!-- Display the YouTube video information-->
+    <div class="music">
+        <h1>You searched for: {{name}}</h1>
+        <h1>Country: {{country}}</h1>
+        <h1>Youtube Link: https://www.youtube.com/embed/{{song_genre}}</h1>
+        
+        <!-- play button to play music -->
+        <div class=results>
+            <div
+                data-video= "{{ song_genre }}"
+                data-autoplay="0"
+                data-loop="1"
+                id="youtube-audio">
 
-    <div class=results>
-        <div
-            data-video= "{{ song_genre }}"
-            data-autoplay="1"
-            data-loop="1"
-            id="youtube-audio">
-
-        </div><br>
+            </div><br>
+        </div>
     </div>
-</div>
 
-<script src="https://www.youtube.com/iframe_api"></script>
-<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="scripts/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/home.js"></script>
 
 </body>
