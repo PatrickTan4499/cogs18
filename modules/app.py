@@ -105,6 +105,7 @@ def configure_routes(app):
         redirect: function call
             redirects/renders the 'register' template page
         
+        External Code: External Code used from CoreyMSchafer 'Python Flask Tutorial'
         '''
         #create user input form
         form = RegistrationForm()
@@ -128,7 +129,8 @@ def configure_routes(app):
         -------
         redirect: function call
             redirects/renders the 'login' template page 
-        
+
+        External Code: External Code used from CoreyMSchafer 'Python Flask Tutorial'
         '''
         #create user input form
         form = LoginForm()

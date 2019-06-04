@@ -13,6 +13,8 @@ class SearchForm(FlaskForm):
 class RegistrationForm(FlaskForm):
     '''
     Form for user to register with my application
+    
+    External Code: External Code used from CoreyMSchafer 'Python Flask Tutorial'
     '''
     username = StringField('Username', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired()])
@@ -23,6 +25,8 @@ class RegistrationForm(FlaskForm):
 class LoginForm(FlaskForm):
     '''
     Form for user to login to my application
+
+    External Code: External Code used from CoreyMSchafer 'Python Flask Tutorial'
     '''
     email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
