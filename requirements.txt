@@ -1,5 +1,5 @@
 requests==2.22.0
-Flask==1.0.3
+Flask==2.3.2
 flask_wtf==0.14.2
 google_api_python_client==1.7.9
 WTForms==2.2.1
